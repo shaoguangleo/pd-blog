@@ -66,3 +66,13 @@ Quit the server with CONTROL-C.
 Now we can access http://127.0.0.1:8000 and we got this:
 
 ![Running screenshot](./picture/run.png)
+
+
+## Generate the SQLite file
+
+```
+python manage.py migrate
+```
+
+This will generate a file named *db.sqlite3*.
+
