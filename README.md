@@ -119,3 +119,22 @@ Now we got :
 
 ![post](./picture/post.png)
 
+## Display
+
+Adding the following code to admin.py
+
+```
+from django.contrib import admin
+from .models import Post
+
+# Register your models here.
+
+class PostAdmin(admin.ModelAdmin):
+    list_display = ('title', 'slug', 'pub_date')
+
+admin.site.register(Post, PostAdmin)
+```
+
+Then we can see the display details 
+
+![Post Details](./picture/post_details.png)
