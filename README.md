@@ -76,3 +76,25 @@ python manage.py migrate
 
 This will generate a file named *db.sqlite3*.
 
+## Create an app
+
+In the following we will create an app.
+
+```
+# First create a model class in models.py
+# Then
+
+$ python manage.py makemigrations
+$ python manage.py migrate
+$ python manage.py runserver
+```
+
+Now we can access http://127.0.0.1:8000/admin, then we got:
+
+![Admin](./picture/admin.png)
+
+Then we should create an admin accout first.
+
+```
+
+```
