@@ -96,5 +96,26 @@ Now we can access http://127.0.0.1:8000/admin, then we got:
 Then we should create an admin accout first.
 
 ```
+(virtual) ➜  git:(master) ✗ python manage.py createsuperuser
+Username (leave blank to use 'leo'): leo
+Email address: name@domain.com
+Password:
+Password (again):
+Superuser created successfully.
+```
+
+## Adding the Post in Admin
 
 ```
+from django.contrib import admin
+from .models import Post
+
+# Register your models here.
+
+admin.site.register(Post)
+```
+
+Now we got :
+
+![post](./picture/post.png)
+
