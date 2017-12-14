@@ -16,3 +16,8 @@ def homepage(request):
     #    post_lists.append("No.{} :".format(str(count)) + str(post) + "<br>" )
     #    post_lists.append("<small>" + str(post.body.encode('utf-8')) + "</small><br><br>")
     return HttpResponse(html)
+
+def about(request):
+    template = get_template('about.html')
+    html = template.render()
+    return HttpResponse(html)
